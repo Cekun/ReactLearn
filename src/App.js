@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/img/logo.svg';
+import './assets/css/App.css';
 
 function App() {
+  //JSX
   return (
     <div className="App">
       <header className="App-header">
