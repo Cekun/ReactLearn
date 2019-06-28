@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-          <Home></Home>
+        <Home></Home>
         <News/>
         <HandleFunc></HandleFunc>
         <EventObj></EventObj>
