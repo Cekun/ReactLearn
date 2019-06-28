@@ -53,10 +53,10 @@ export default class EventObj extends React.Component{
                  4. 点击按钮的识货获取state里面的username */}
                 <input ref="username" onChange={this.inputChange}/><button onClick={this.getInput}>获取input的值</button>
                 <p>{this.state.username}</p>
-                 <h3>键盘事件</h3>
+                 <h3>键盘事件-</h3>
                 <input onKeyDown={this.inputKeyDown}/>
 
-                <br/><br/><br/><br/>
+                <br/><br/><br/><br/>  
             </div>
         )
     }
