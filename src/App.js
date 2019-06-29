@@ -7,6 +7,8 @@ import HandleFunc from './components/HandleFunc'
 import EventObj from './components/EventObj'
 import TodoList from './components/TodoList'
 import ReactForm from './components/ReactForm'
+import Axios from './components/Axios'
+import FetchJsonp from './components/FetchJsonp'
 
 function App() {
   //JSX
@@ -20,7 +22,11 @@ function App() {
         <EventObj></EventObj>
         <TodoList/><br/><br/>
         <hr/>
-        <ReactForm></ReactForm>   <br/><br/>     
+        <ReactForm></ReactForm>   <br/><br/>
+        <hr/>
+        <Axios></Axios><br/><br/>
+        <hr />
+        <FetchJsonp></FetchJsonp>    
       </header>
     </div>
   );
