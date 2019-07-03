@@ -9,8 +9,6 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
 ### `npm test`
 
@@ -31,37 +29,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 ### `npm run build` fails to minify
 
@@ -163,8 +132,40 @@ get请求：
 jsonp请求地址:
 
     http://www.phonegap100.com/appapi.php?a=getPortalList&catid=20&callback=?
+
            
-=======
+
 # ReactLearn1
 
->>>>>>> 03598380a3a48b4d2a5dcd70fd40a328e8410bb0
+    
+## React 生命周期
+1. 初始化阶段：  
+    constructor()  
+    componentWillMount()  
+    render() 
+
+2. 更新阶段  
+   componentWillUpdate()  
+   render()  
+   componentDidUpdate()    
+
+3. 组件销毁  
+   componentWillUnmount() 在这里清楚定时器
+
+4. 错误处理  
+   componentDidCatch()       
+
+## 虚拟DOM和Diff算法  
+> 虚拟DOM和Diff算法是react中非常核心的两个概念  
+
+**虚拟DOM:**  
+   内部执行流程：  
+    1. 用JavaScript对象结构表示DOM树的结构；然后用这个树结构建一个真正的DOM树。插到文档当中；  
+    2. 当状态变更的时候，重新构造一棵树的对象树，然后用新的树和旧的树就行比较，记录两个数的差异；  
+    3. 把步骤2所记录的差异应用到步骤1所构建的真正的DOM树上，视图就更新了。   
+
+    本质：就是在JS和DOM之间做了一个缓存，可以类比CPU和硬盘，硬盘读取数据速度慢，我们就在它们之间加一个缓存条。反之，既然DOM运行速度慢，那么我们就在JS和DOM之间加个缓存，JS只操作visual DOM，最后的时候再把变更的结果写入DOM。  
+
+
+
+   
