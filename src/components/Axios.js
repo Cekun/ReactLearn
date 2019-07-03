@@ -28,6 +28,10 @@ class Axios extends Component {
           });
     }
 
+    componentDidMount = () =>{
+        this.getData()
+    }
+
     render() {
         return (
             <div>

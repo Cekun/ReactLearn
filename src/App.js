@@ -9,8 +9,35 @@ import TodoList from './components/TodoList'
 import ReactForm from './components/ReactForm'
 import Axios from './components/Axios'
 import FetchJsonp from './components/FetchJsonp'
+import Lifecycle from './components/Lifecycle.js';
 
-function App() {
+class App extends React.Component  {
+  constructor(props){
+    super(props);
+
+    this.state={
+      title:'我是app组件的title',
+      flag:true
+    }
+
+  }
+
+  setFlag=()=>{
+
+    this.setState({      
+
+      flag:!this.state.flag
+    })
+  }
+  setTitle=()=>{
+
+    this.setState({      
+
+      title:'我是app组件改变后的title'
+    })
+  }
+
+  render(){
   //JSX
   return (
     <div className="App">
@@ -28,8 +55,22 @@ function App() {
         <hr />
         <FetchJsonp></FetchJsonp>    
       </header>
+        
+         <br /><br />
+         <hr />
+         <br /><br />
+         {
+            this.state.flag?<Lifecycle title={this.state.title} />:""
+         } 
+         <button onClick={this.setFlag}>挂载和销毁声明周期函数组件</button>
+        <br />
+         <br />
+        <button onClick={this.setTitle}>改变父组件title的值</button>
+
+
     </div>
   );
+  }
 }
 
 export default App;

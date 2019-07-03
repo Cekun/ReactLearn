@@ -66,9 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
 # ReactLearn
 学习react 简单些一些demo
-1. [react表单](.../components/ReactForm)
+1. [react表单](src/components/ReactForm)
 2. 事件对象---EventObj组件
 3. 代办事项-已完成对象 ---   TodoList
 4. 模块化---封装storage
@@ -163,3 +164,7 @@ jsonp请求地址:
 
     http://www.phonegap100.com/appapi.php?a=getPortalList&catid=20&callback=?
            
+=======
+# ReactLearn1
+
+>>>>>>> 03598380a3a48b4d2a5dcd70fd40a328e8410bb0
